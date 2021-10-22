@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="android.app.maryam_tp2.ui.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_Contact"
+        android:name="android.app.maryam_tp2.ui.ListContactFragment"
+        android:label="Contacts"
+        tools:layout="@layout/fragment_list_contact" />
+
+    <fragment
+        android:id="@+id/nav_ajouter"
+        android:name="android.app.maryam_tp2.ui.AjouterFragment"
+        android:label="Ajouter Contact"
+        tools:layout="@layout/fragment_ajouter" />
+    <fragment
+        android:id="@+id/nav_modifier"
+        android:name="android.app.maryam_tp2.ui.mdifierFragment"
+        android:label="Modifier Contact"
+        tools:layout="@layout/fragment_mdifier" />
+    <fragment
+        android:id="@+id/nav_delete"
+        android:name="android.app.maryam_tp2.ui.DeleteFragment"
+        android:label="Supprimer Contacts"
+        tools:layout="@layout/fragment_delete" />
+</navigation>

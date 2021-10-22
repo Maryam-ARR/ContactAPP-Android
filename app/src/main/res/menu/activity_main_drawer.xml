@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_Contact"
+            android:icon="@drawable/ic_contact"
+            android:title="Contacts" />
+        <item
+            android:id="@+id/nav_ajouter"
+            android:icon="@drawable/ic_add"
+            android:title="Ajouter nouveau contact"
+            />
+        <item
+            android:id="@+id/nav_modifier"
+            android:icon="@drawable/ic_edit"
+            android:title="Modifier contact" />
+        <item
+            android:id="@+id/nav_delete"
+            android:icon="@drawable/ic_delete"
+            android:title="Supprimer contacts" />
+    </group>
+</menu>

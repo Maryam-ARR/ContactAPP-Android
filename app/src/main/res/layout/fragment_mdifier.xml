@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/crop"
+    tools:context="android.app.maryam_tp2.ui.mdifierFragment"
+    android:id="@+id/frag_modifier">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="395dp"
+                android:layout_height="203dp"
+
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="13dp"
+                android:layout_marginEnd="3dp"
+                app:srcCompat="@drawable/ic_contact"
+                tools:srcCompat="@drawable/contact_android" />
+
+            <EditText
+                android:id="@+id/nom"
+                style="@style/Widget.AppCompat.EditText"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"
+                android:drawableLeft="@drawable/ic_contact"
+                android:ems="10"
+                android:hint="Nom du contact"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+
+            <EditText
+                android:id="@+id/editTextPhone2"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nom"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:drawableLeft="@drawable/ic_phone"
+                android:ems="10"
+                android:hint="Téléphone"
+                android:inputType="phone"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/nav_modifier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="62dp"
+                android:layout_marginEnd="51dp"
+                android:layout_marginBottom="134dp"
+                android:background="@android:color/holo_blue_dark"
+                android:backgroundTint="#3C3F41"
+                android:fontFamily="serif"
+                android:text="Modifier ce contact"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/white"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:icon="@drawable/ic_edit" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
